@@ -111,7 +111,7 @@ void CheckWidget::on_click() {
     string curr_path = paths.at(idx);
 
     ostringstream ss;
-    ss << "Current " << idx << " / Total " << path_len;
+    ss << "Current " << idx + 1 << " / Total " << path_len;
     status->setText(ss.str().c_str());
 
     ss.str(""); ss.clear();

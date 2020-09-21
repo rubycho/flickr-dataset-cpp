@@ -46,6 +46,7 @@ _deps
 
 # jetbrains
 cmake-build-debug
+cmake-build-release
 .idea
 
 # config file

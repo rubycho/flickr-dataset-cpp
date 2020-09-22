@@ -48,8 +48,10 @@ int main(int argc, char **argv) {
 
     /* ini file check */
     auto c = Config();
-    if (c.parse(ini_path) < 0)
+    if (c.parse(ini_path) < 0) {
         fd_error("failed to parse ini file", ini_path);
+        exit(1);
+    }
     c.print();
 
     /* handle each command */
